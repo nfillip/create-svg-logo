@@ -38,15 +38,15 @@ function init() {
       const svgString = buildSVG(data);
       inputValues = data;
       fs.writeFile("./examples/randomLogo.svg", svgString, (err) =>
-        err ? console.error(err) : console.log("Generated randomLogo.svg!")
+        err ? console.error(err) : console.log("\033[102mGenerated randomLogo.svg in Examples Folder!\033[0m")
       );
     });
 }
 //function: tests if input value is too large
 const isThreeOrLess = async (input) => {
   if (input.length > 3) {
-    // console.log("\033[91m Please Only Input 3 or Less Characters\033[0m");
-    console.log("Please Only Input 3 or Less Characters");
+    console.log("\033[91m Please Only Input 3 or Less Characters\033[0m");
+    // console.log("Please Only Input 3 or Less Characters");
     return false;
   } else {
     return true;
@@ -57,14 +57,14 @@ const isHex = async (input) => {
   const hasNumber = new RegExp("^(?=.*\\d).+$");
   const hasHash = input.indexOf("#");
   if (hasNumber.test(input) && hasHash === -1) {
-    // console.log("\033[91m Please use a # before your HexDec Number\033[0m");
-    console.log("Please use a # before your HexDec Number");
+    console.log("\033[91m Please use a # before your HexDec Number\033[0m");
+    // console.log("Please use a # before your HexDec Number");
     return false;
   } else {
     return true;
   }
 };
-
+// --runInBand --detectOpenHandles --forceExit --silent
 //function: tests what the shape input was from user and builds a constructor function from this value then calls its prototype method
 function buildSVG(data) {
   const { text, textColor, shapeColor, shape } = data;
