@@ -1,0 +1,25 @@
+<!-- CIRCLE -->
+<!-- <svg version="1.1"
+    width="300"
+    height="200">
+    <circle cx="150" cy="100" r="80" fill="green" />
+    <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
+</svg> -->
+
+<!-- POLYGON -->
+<!-- <svg version="1.1"
+    width="300"
+    height="200">
+    <polygon points="0,200 300,200 150,0" style="fill:lime;stroke:purple;stroke-width:1" />
+    <text x="150" y="150" font-size="60" text-anchor="middle" fill="white">SVG</text>
+</svg> -->
+
+<!-- SQUARE -->
+<svg version="1.1"
+    width="300"
+    height="200">
+    <rect x="50" y="0" width="200" height="200" fill = "red"/>
+    
+    <!-- <rect points ="50,50 250,50 250,250 50,250" fill="red" /> -->
+    <text x="150" y="150" font-size="60" text-anchor="middle" fill="white">SVG</text>
+</svg>
