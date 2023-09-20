@@ -42,7 +42,7 @@ function init() {
       );
     });
 }
-//function: tests if input value is too large
+// function: tests if input value is too large
 const isThreeOrLess = async (input) => {
   if (input.length > 3) {
     console.log("\033[91m Please Only Input 3 or Less Characters\033[0m");
@@ -52,6 +52,16 @@ const isThreeOrLess = async (input) => {
     return true;
   }
 };
+
+// function isThreeOrLess(input) {
+//   if (input.length > 3) {
+//       console.log("\033[91m Please Only Input 3 or Less Characters\033[0m");
+//         // console.log("Please Only Input 3 or Less Characters");
+//         return false;
+//       } else {
+//         return true;
+//       }
+// }
 //function: tests if input value has numbers and a # for hexadec colors
 const isHex = async (input) => {
   const hasNumber = new RegExp("^(?=.*\\d).+$");
